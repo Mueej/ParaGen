@@ -1,22 +1,52 @@
 # ParaGen
 
-A highly interactive, browser-based 3D parachute generation and visualization tool built for professional pattern drafting. ParaGen allows users to visually configure structural variables for a parachute canopy and directly export the resulting 2D cutting patterns as standard DXF blueprints.
+**Procedural parachute patterns for engineering and design**
 
-## Features
-- **Real-Time 3D Visualization**: Fully responsive `react-three-fiber` environment rendering the canopy mesh in real-time.
-- **Parametric Adjustments**: Seamless manipulation of Diameter, Shape Ratio, Panel Count, Vent Ratio, and Seam Allowance.
-- **Blueprint DXF Export**: Harnesses raw geometric algorithms to generate highly accurate 2D flat-pattern gores with seamlessly integrated seam allowances.
-- **Monochrome Theme Engine**: Sleek, structural light and dark mode toggling mirroring a darkroom engineering aesthetic.
+<br/>
+<br/>
+<p align="center"><a href="https://github.com/Mueej/ParaGen">🔗 https://github.com/Mueej/ParaGen</a></p>
 
-## Setup Protocol
+<br/>
+<br/>
 
-```bash
-cd ParaGen
-npm install
-npm run dev
+[ParaGen](https://github.com/Mueej/ParaGen) (or simply, `paragen`) is a tool that generates mathematically perfect 3D parachute canopies and flattens them into 2D laser-cuttable DXF patterns.
+
+The models can be customized and downloaded, and are meant to be then cut out of ripstop fabric and assembled.
+
+ParaGen is a **passion project**, not a commercial product of any kind! 
+
+### The name ParaGen
+
+The name ParaGen comes from the combination of "Parachute" and "Generator", reflecting the app's purpose: allowing engineers and hobbyists to seamlessly design and auto-generate custom aerodynamic blueprints without relying on heavy CAD software.
+
+### Technology
+
+The tool runs locally as a webapp, built with vanillajs and React, using [ThreeJS](https://threejs.org) and [vitejs](https://vite.dev). The models are generated completely procedurally through real-time arc geometry and have a custom rendering pipeline targeting a highly technical, blueprint-style monochrome aesthetic.
+
+## Using ParaGen
+
+### Build the canopies
+
+Anyone with fabric and a sewing machine can construct the physical parachutes.
+
+1. Open the ParaGen application,
+1. Tweak the 3D dimensions (Diameter, Shape Ratio, Panel Count) to your liking,
+1. Hit download and open the generated DXF technical pattern in your favorite laser cutting or printing software,
+1. Cut the identical panels out and sew them down the calculated offset line!
+
+### Build the app
+
+The app uses [vitejs](https://vite.dev).
+
+```
+npm install # install dependencies
+npm run dev # for local development
+npm run build # for production build
 ```
 
-## How to use Exported Patterns
-1. Import the generated `.dxf` pattern into standard CAD or vector processing software (Fusion 360, AutoCAD, Illustrator).
-2. Print or laser-cut the pattern out of your fabric for the exact `Panel Count` generated.
-3. Overlap and sew panels strictly tracking the encoded `Seam Allowance`.
+## Roadmap
+
+The roadmap is not set in stone and is mostly a list of ideas to extend ParaGen.
+
+* Expand DXF metadata logging.
+* Advanced mode for customizable bridle lengths and rigging.

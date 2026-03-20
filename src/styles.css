@@ -69,6 +69,8 @@ body {
   padding-top: 1rem;
   margin-bottom: -2.5rem;
   pointer-events: auto;
+  position: relative;
+  z-index: 50;
 }
 
 .brand-logo-text {
@@ -102,6 +104,7 @@ body {
   background-color: var(--text-color);
   border-radius: 0;
   transition: transform 0.2s cubic-bezier(0.4, 0.0, 0.2, 1), background-color 0.3s ease;
+  pointer-events: none;
 }
 
 .theme-switch.dark .theme-switch-thumb {
@@ -251,9 +254,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
   transition: all 0.2s ease;
 }
 
-.export-button:hover, .export-button:active {
+.export-button:hover:not(:disabled), .export-button:active:not(:disabled) {
   background: var(--btn-hover);
   border-color: var(--btn-hover);
+  transform: translateY(-2px);
 }
 
 .export-button:disabled {
@@ -270,6 +274,36 @@ input[type="range"]::-webkit-slider-thumb:hover {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0rem 2rem 2rem;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  color: var(--subtext-color);
+  z-index: 10;
+}
+
+.footer-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-row a:hover {
+  transform: translateY(-2px);
+  background-color: var(--subtext-color);
 }
 
 @media (max-width: 1050px) {
@@ -343,5 +377,13 @@ input[type="range"]::-webkit-slider-thumb:hover {
     width: 100%;
     max-width: 480px;
     margin-top: -1.5rem;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0 0 3rem 0;
   }
 }

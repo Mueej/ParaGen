@@ -125,6 +125,10 @@ function App() {
           </section>
 
           <div className="info-box">
+            <h3>About ParaGen</h3>
+            <p style={{ fontSize: '0.75rem', color: 'var(--subtext-color)', margin: '0.25rem 0 0.75rem 0' }}>
+              ParaGen procedurally generates 3D parachute models and natively exports perfectly flattened laser-ready 2D CAD patterns inline.
+            </p>
             <h3>How to use these files</h3>
             <ul>
               <li>Use the template to cut out <strong>{params.gores}</strong> identical fabric panels.</li>

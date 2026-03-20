@@ -4,12 +4,12 @@
 
 <br/>
 <br/>
-<p align="center"><a href="ParaGen">🔗 https://para-gen-kohl.vercel.app/</a></p>
+<p align="center"><a href="https://para-gen-kohl.vercel.app/">🔗 https://para-gen-kohl.vercel.app/</a></p>
 
 <br/>
 <br/>
 
-[ParaGen](https://github.com/Mueej/ParaGen) (or simply, `paragen`) is a tool that generates mathematically perfect 3D parachute canopies and flattens them into 2D laser-cuttable DXF patterns.
+[ParaGen](https://para-gen-kohl.vercel.app/) is a tool that generates mathematically perfect 3D parachute canopies and flattens them into 2D laser-cuttable DXF patterns.
 
 The models can be customized and downloaded, and are meant to be then cut out of ripstop fabric and assembled.
 

@@ -4,7 +4,7 @@
 
 <br/>
 <br/>
-<p align="center"><a href="https://github.com/Mueej/ParaGen">🔗 https://github.com/Mueej/ParaGen</a></p>
+<p align="center"><a href="ParaGen">🔗 https://para-gen-kohl.vercel.app/</a></p>
 
 <br/>
 <br/>

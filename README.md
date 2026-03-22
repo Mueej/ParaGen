@@ -2,6 +2,10 @@
 
 **Procedural parachute patterns for engineering and design**
 
+<p align="center">
+  <img src="./public/demo.gif" alt="ParaGen Demo" width="600"/>
+</p>
+
 <br/>
 <br/>
 <p align="center"><a href="https://para-gen-kohl.vercel.app/">🔗 https://para-gen-kohl.vercel.app/</a></p>
@@ -11,7 +15,7 @@
 
 [ParaGen](https://para-gen-kohl.vercel.app/) is a tool that generates mathematically perfect 3D parachute canopies and flattens them into 2D laser-cuttable DXF patterns.
 
-The models can be customized and downloaded, and are meant to be then cut out of ripstop fabric and assembled.
+The models can be customized and downloaded, and are meant to be then cut out of fabric of choice and assembled.
 
 ParaGen is a **passion project**, not a commercial product of any kind! 
 

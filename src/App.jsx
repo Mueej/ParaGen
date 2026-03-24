@@ -247,7 +247,7 @@ function App() {
 
       <footer className="footer-row">
         <span>ParaGen &mdash; Procedural 3D Parachute Pattern Generation</span>
-        <a href="https:
+        <a href="https://github.com/Mueej/ParaGen" target="_blank" rel="noreferrer" aria-label="GitHub Repository">
           <Github size={20} />
         </a>
       </footer>
